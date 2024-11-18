@@ -1,3 +1,5 @@
 # FRONTEND
 tailwindCSS
 shadcn/ui
+
+npm install @clerk/clerk-react #for Auth perpose
