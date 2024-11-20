@@ -3,3 +3,6 @@ tailwindCSS
 shadcn/ui
 
 npm install @clerk/clerk-react #for Auth perpose
+
+# BACKEND
+npm i express mongoose dotenv cloudinary cors @clerk/express socket.io
