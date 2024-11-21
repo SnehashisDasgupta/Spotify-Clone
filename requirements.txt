@@ -5,4 +5,8 @@ shadcn/ui
 npm install @clerk/clerk-react #for Auth perpose
 
 # BACKEND
-npm i express mongoose dotenv cloudinary cors @clerk/express socket.io
+npm i express mongoose dotenv cors
+npm i socket.io
+npm i @clerk/express
+npm i cloudinary
+npm i express-fileupload
