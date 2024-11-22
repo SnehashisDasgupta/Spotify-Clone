@@ -11,7 +11,6 @@ import songRoutes from "./routes/song.route.js";
 import albumRoutes from "./routes/album.route.js";
 import statRoutes from "./routes/stat.route.js";
 import { connectDB } from "./lib/db.js";
-import fileUpload from "express-fileupload";
 
 dotenv.config();
 
@@ -34,6 +33,11 @@ app.use("/api/admin", adminRoutes);
 app.use("/api/songs", songRoutes);
 app.use("/api/albums", albumRoutes);
 app.use("/api/stats", statRoutes);
+
+// error handler
+app.use((err, req, res, next) => {
+    res.status(500).json({ message: process.env.NODE_ENV === "production" ? "Internal server error" : err.nessage });
+})
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
