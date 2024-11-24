@@ -1,8 +1,11 @@
 # FRONTEND
-tailwindCSS
-shadcn/ui
+tailwindCSS, shadcn/ui
 
-npm install @clerk/clerk-react #for Auth perpose
+npm i @clerk/clerk-react #for Auth perpose
+npm i react-router-dom
+npm i axios
+npm i lucide-react
+npx shadcn@latest add card
 
 # BACKEND
 npm i express mongoose dotenv cors
