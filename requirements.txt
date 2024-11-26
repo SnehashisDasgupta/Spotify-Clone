@@ -6,10 +6,13 @@ npm i react-router-dom
 npm i axios
 npm i lucide-react
 npx shadcn@latest add card
+npx shadcn@latest add resizable
+npx shadcn@latest add scroll-area
+npm i zustand
 
 # BACKEND
 npm i express mongoose dotenv cors
 npm i socket.io
 npm i @clerk/express
 npm i cloudinary
-npm i express-fileupload
+npm i express-fileupload  
