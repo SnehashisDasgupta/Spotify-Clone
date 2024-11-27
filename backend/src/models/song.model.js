@@ -7,6 +7,6 @@ const songSchema = new mongoose.Schema({
     audioUrl: { type: String, required: true, },
     duration: { type: Number, required: true, },
     albumId: { type: mongoose.Schema.Types.ObjectId, ref: 'Album', required: false, },
-}, { timestamp: true });
+}, { timestamps: true });
 
 export const Song = mongoose.model("Song", songSchema);
