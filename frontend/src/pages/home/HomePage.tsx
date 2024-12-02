@@ -8,7 +8,6 @@ import SectionGrid from "./components/SectionGrid";
 const HomePage = () => {
   const {
     isLoading,
-    featuredSongs,
     madeForYouSongs,
     trendingSongs,
     fetchFeaturedSongs,
